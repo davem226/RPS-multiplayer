@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Link CSS -->
+
+
+    <!-- Link jQuery -->
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+    <!-- Link Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+
+    <title>Rock, Paper, Scissors</title>
+</head>
+
+<body>
+
+    <div id="start-screen">
+
+        <h2>Play rock, paper, scissors!!!</h2>
+        <div id="who-is-playing">
+            <p id="no-players">Nobody wants to play :`(</p>
+        </div>
+        <button id="play-button">Play</button>
+        <div id="type-name">
+            <p id="invite">Type in your name to play!</p>
+            <span>
+                <input id="name" type="text">
+                <button id="join">Join</button>
+            </span>
+        </div>
+
+    </div>
+
+    <div id="game-screen">
+
+        <div id="scores">
+            <div id="player-one-score"></div>
+            <div id="player-two-score"></div>
+        </div>
+
+        <div id="rps">
+            <div id="text"></div>
+            <span id="game-buttons">
+                <button id="rock">Rock</button>
+                <button id="paper">Paper</button>
+                <button id="scissors">Scissors</button>
+            </span>
+        </div>
+
+        <div id="result">
+            <span>
+                <div id="player-one-result">
+                    <p id="player-one"></p>
+                    <p id="player-one-choice"></p>
+                </div>
+                <div id="player-two-result">
+                    <p id="player-two"></p>
+                    <p id="player-two-choice"></p>
+                </div>
+            </span>
+        </div>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>
